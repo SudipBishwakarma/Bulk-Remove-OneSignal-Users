@@ -1,13 +1,15 @@
 import pandas as pd
 import numpy as np
+import requests
+
 import os
 import shutil
 from time import time, strftime, gmtime
 from multiprocessing import Queue, Process
-import requests
 import logging
 from logging import handlers, config
 import threading
+
 from settings import *
 
 BASE_DIR = os.getcwd()
